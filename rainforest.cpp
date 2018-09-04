@@ -692,7 +692,7 @@ void moveBigfoot()
     // Move the umbrella
     VecCopy(umbrella.pos, umbrella.lastpos);
     umbrella.pos[0] = bigfoot.pos[0];
-    //umbrella.pos[1] = bigfoot.pos[1];
+    umbrella.pos[1] = bigfoot.pos[1] + 110;
 }
 
 
@@ -986,5 +986,6 @@ void render()
 	ggprint8b(&r, 16, c, "R - Rain");
 	ggprint8b(&r, 16, c, "D - Deflection");
 	ggprint8b(&r, 16, c, "N - Sounds");
+
 }
 
