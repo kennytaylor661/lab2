@@ -688,6 +688,11 @@ void moveBigfoot()
 	//Gravity?
 	if (addgrav)
 		bigfoot.vel[1] -= 0.75;
+
+    // Move the umbrella
+    VecCopy(umbrella.pos, umbrella.lastpos);
+    umbrella.pos[0] = bigfoot.pos[0];
+    //umbrella.pos[1] = bigfoot.pos[1];
 }
 
 
